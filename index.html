@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>GP Calculator</h1>
+        <div class="input-card">
+            <div class="col">
+                <input id="course-code" class="input" type="text" placeholder="Course Code">
+            </div>
+            <div class="col">
+                <input id="unit-load" class="input" type="number" placeholder="Course Unit " min="1" max="15">
+            </div>
+            <div class="col">
+                <select id="grade" class="form-grade">
+                    <option value="">Grade</option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+            <div class="col">
+                <input id="add" class="btn-add" type="button" value="Add">
+
+            </div>
+        </div>
+        <table id="table" class="table ">
+            <thead class="table-flex">
+                <tr class="table-text">
+                    <th class="c-code">Course Code</th>
+                    <th class="unit">Course Unit</th>
+                    <th class="grade">Grade</th>
+                </tr>
+            </thead>
+            <tbody class="tbody" id="tbody">
+
+            </tbody>
+            <tfoot class="total" id="tfoot">
+
+            </tfoot>
+        </table>
+        <div class="btn-card">
+            <div class="col">
+                <input id="calc-gp" class="btn-cal " type="button" value="Calc GP">
+            </div>
+            <div class="col">
+                <input id="clear" class="btn-del " type="button" value="clear">
+            </div>
+        </div>
+        <p class="p-text">Design@Matthewazuonye</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
